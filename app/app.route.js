@@ -1,16 +1,15 @@
-var module_name = angular.module('app',['ui.router','ngStorage']);
-   module_name.config(function($stateProvider,$urlRouterProvider){
+   appModule.config(function($stateProvider,$urlRouterProvider){
    	$urlRouterProvider.otherwise("/Newissue");
    	$stateProvider
    		.state('Issues',{
    			url:'/Issues',
-			templateUrl:'html/Issues.html',
+			templateUrl:'app/components/Issues.html',
 			controller:'addTotable'
 
    		})
    		.state('Newissue',{
    			url:'/Newissue',
-			templateUrl:'html/newIssue.html',
+			templateUrl:'app/components/newIssue.html',
    			controller:'addTotable'
    		});
    });

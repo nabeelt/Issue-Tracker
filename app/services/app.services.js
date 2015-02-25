@@ -1,4 +1,4 @@
-module_name.factory('newService',['$http',
+appModule.factory('newService',['$http',
 	function($http){
 		var urlBase='JSON/index.json';
 		var newService={};

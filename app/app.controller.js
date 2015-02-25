@@ -1,4 +1,4 @@
-module_name
+appModule
  	.controller('addTotable',['$scope','newService','$localStorage','$state',
  		function($scope,newService,$localStorage,$state){  
 			$scope.names = [];
@@ -31,7 +31,7 @@ module_name
 			}
 
  	}]);
-module_name.controller('addcount',['$scope','$localStorage',function($scope,$localStorage){
+appModule.controller('addcount',['$scope','$localStorage',function($scope,$localStorage){
 	$scope.addCount=function(index){
 		$localStorage.data[index].prioLevel=$scope.key;
 	
