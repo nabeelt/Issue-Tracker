@@ -28,7 +28,7 @@ appModule
 				$scope.isModalOpen=true;
 				
 			}
-			$scope.clear= function(){
+			$scope.clearStoragedata= function(){
 				if($localStorage.data)
 				{
 					delete $localStorage.data;
@@ -37,7 +37,7 @@ appModule
 						},1500);
 				}
 			}
-			$scope.clean=function(){
+			$scope.showIssues=function(){
 				window.setTimeout(function () {
 					$state.go('Issues');
 					},500);
