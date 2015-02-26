@@ -10,22 +10,23 @@
 	</title>
 	<body>
 		<div id="main-page"ng-controller="addTotable">
-			<div class="page-header">
-				<h1>Issue Tracker</h1>
-				<nav class="navbar navbar-inverse">
-					<div class="container">
-						 <ul class="nav nav-tabs">
-						 	<li><a href="#/Issues">Issue</a></li>
-						 	<li><a href="#/Newissue">New Issue</a></li>
-						 </ul>						
-					</div>
-				</nav>
-				<p>!! for any issues, contact your sysadmin</p>
+			<div class="row">
+				<div class=" col-md-12 page-header">
+					<h1>Issue Tracker</h1>
+					<nav class="navbar navbar-inverse">
+						<div class="container-fluid">
+							 <ul class="nav nav-tabs">
+							 	<li><a href="#/Issues">Issue</a></li>
+							 	<li><a href="#/Newissue">New Issue</a></li>
+							 </ul>						
+						</div>
+					</nav>
+					<p>!! for any issues, contact your sysadmin</p>
+				</div>
 			</div>
-			
 			<!-- <div user="first" dir class="center"></div>
 			<div user="second" dir class="center"></div> -->
-		    <div ui-view></div>
+		    	<div ui-view></div>
 		</div>		
 		<script src= "assets/js/jquery.min.js"></script>
 		<script src= "assets/js/bootstrap.min.js"></script>

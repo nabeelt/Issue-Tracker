@@ -1,23 +1,25 @@
-<div id="table-container">
-	<table class="table table-bordered table table-hover" id="tab">
-		<thead class="table-border">
-			<th>Subject</th>
-			<th>Assignee</th>
-			<th>Priority[1-10]</th>
-		</thead>
-		<tbody>
-			<tr  ng-repeat="x in names">
-				<td>{{x.subject}}</td>
-				<td>{{x.assignee}}</td>
-				<td>
-					<form name="prio" ng-controller="addcount">
-						<input type="text" name="input"  ng-model="key" placeholder="5" readonly>
-						<input type="range" ng-model="key" min="1" max="10" ng-change="addCount($index)">
-						<!-- <span style="color:red" ng-show="prio.input.$invalid">invalid</span> -->
-					</form>
-				</td>
-			</tr>
-		</tbody>
-	</table>
+<div class="row">
+	<div class="col-md-12 col-sm-12" id="table-container">
+		<table class="table table-bordered table table-hover" id="tab">
+			<thead class="table-border">
+				<th>Subject</th>
+				<th>Assignee</th>
+				<th>Priority[1-10]</th>
+			</thead>
+			<tbody>
+				<tr  ng-repeat="x in names">
+					<td>{{x.subject}}</td>
+					<td>{{x.assignee}}</td>
+					<td>
+						<form name="prio" ng-controller="addcount">
+							<input type="text" name="input"  ng-model="key" placeholder="5" readonly>
+							<input type="range" ng-model="key" min="1" max="10" ng-change="addCount($index)">
+							<!-- <span style="color:red" ng-show="prio.input.$invalid">invalid</span> -->
+						</form>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 </div>
 

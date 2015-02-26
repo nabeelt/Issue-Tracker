@@ -25,9 +25,22 @@ appModule
 				x.push(doc);
 				console.log(x);
 				$localStorage.data=x;
+				$scope.isModalOpen=true;
+				
+			}
+			$scope.clear= function(){
+				if($localStorage.data)
+				{
+					delete $localStorage.data;
+					window.setTimeout(function(){
+						$state.go('Issues');
+						},1500);
+				}
+			}
+			$scope.clean=function(){
 				window.setTimeout(function () {
 					$state.go('Issues');
-					}, 1500);
+					},500);
 			}
 
  	}]);
